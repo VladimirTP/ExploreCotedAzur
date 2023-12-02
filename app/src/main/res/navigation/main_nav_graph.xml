@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_popularCafesFragment"
+            app:destination="@id/popularCafesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_yachtFragment"
+            app:destination="@id/yachtFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_bestPlaceToVisitFragment"
+            app:destination="@id/bestPlaceToVisitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularCafesFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.PopularCafesFragment"
+        android:label="fragment_popular_cafes"
+        tools:layout="@layout/fragment_popular_cafes" >
+        <action
+            android:id="@+id/action_popularCafesFragment_to_cafesNameFragment"
+            app:destination="@id/cafesNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cafesNameFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.CafesNameFragment"
+        android:label="fragment_cafes_name"
+        tools:layout="@layout/fragment_cafes_name" >
+        <action
+            android:id="@+id/action_cafesNameFragment_to_cafesMenuFragment"
+            app:destination="@id/cafesMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cafesLocationFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.location.CafesLocationFragment"
+        android:label="fragment_cafes_location"
+        tools:layout="@layout/fragment_cafes_location" />
+    <fragment
+        android:id="@+id/cafesMenuFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.CafesMenuFragment"
+        android:label="fragment_cafes_menu"
+        tools:layout="@layout/fragment_cafes_menu" >
+        <action
+            android:id="@+id/action_cafesMenuFragment_to_cafesLocationFragment"
+            app:destination="@id/cafesLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_eventsNameFragment"
+            app:destination="@id/eventsNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsNameFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.EventsNameFragment"
+        android:label="fragment_events_name"
+        tools:layout="@layout/fragment_events_name" >
+        <action
+            android:id="@+id/action_eventsNameFragment_to_eventsLocationFragment"
+            app:destination="@id/eventsLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsLocationFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.location.EventsLocationFragment"
+        android:label="fragment_events_location"
+        tools:layout="@layout/fragment_events_location" />
+    <fragment
+        android:id="@+id/yachtFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.YachtFragment"
+        android:label="fragment_yacht"
+        tools:layout="@layout/fragment_yacht" >
+        <action
+            android:id="@+id/action_yachtFragment_to_yachtNameFragment"
+            app:destination="@id/yachtNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yachtNameFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.YachtNameFragment"
+        android:label="fragment_yacht_name"
+        tools:layout="@layout/fragment_yacht_name" />
+    <fragment
+        android:id="@+id/bestPlaceToVisitFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.BestPlaceToVisitFragment"
+        android:label="fragment_best_place_to_visit"
+        tools:layout="@layout/fragment_best_place_to_visit" >
+        <action
+            android:id="@+id/action_bestPlaceToVisitFragment_to_bestPlaceToVisitNameFragment"
+            app:destination="@id/bestPlaceToVisitNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bestPlaceToVisitNameFragment"
+        android:name="com.example.explorecotedazur.ui.mainFragments.home.fragments.BestPlaceToVisitNameFragment"
+        android:label="fragment_best_place_to_visit_name"
+        tools:layout="@layout/fragment_best_place_to_visit_name" />
+</navigation>
