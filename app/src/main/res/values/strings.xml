@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Explore Cote d\'Azur</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="location">Location</string>
+    <string name="welcome">Welcome to the famous southern region of France. Beautiful climate, picturesque nature, warm sea and fashionable hotels</string>
+    <string name="what_are_you_interested_in">Select the category you are currently interested in</string>
+    <string name="cafes_main">Cafes</string>
+    <string name="cote_dazur">Côte d’Azur</string>
+    <string name="categories_name">Categories Name</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="unknown_error">Unknow Error</string>
 </resources>
